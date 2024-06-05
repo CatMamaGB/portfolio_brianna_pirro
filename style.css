@@ -13,10 +13,29 @@ p{
 body {
     background-color: blanchedalmond;
 }
-
-.header { 
+nav ul { 
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+header { 
     padding: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: hotpink;
     color: black;
+}
+#portfolio_images{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#contact_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+#contact_info input{
+    width: 50%;
+    margin: auto;
 }
