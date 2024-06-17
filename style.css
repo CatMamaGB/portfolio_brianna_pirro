@@ -3,45 +3,94 @@
   padding: 0%;
   margin: 0%;
 }
-p {
-  width: 50%;
-  margin: 20px;
-  padding: 30px;
-  border: 2px solid #0000;
-}
+
 
 body {
+  min-height: 100%vh;
+  position: relative;
+  line-height: 1.5;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: blanchedalmond;
 }
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px;
-  font-weight: bolder;
-  padding-block: 75px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
+
 header {
-  padding: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: hotpink;
-  color: black;
-}
-#portfolio_images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(70, 37, 71);
+  color: #ffffff;
 }
-#contact_info {
+
+h1 {
+  font-size: 46px;
+}
+
+nav{
+  margin-right: 20px;
+  font-family: 'Franklin Gothic Medium';
+  font-size: 25px;
+}
+
+nav ul{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin-left: 25px;
+  padding: 10px;
+}
+
+.card {
+  flex: 1 0 0;
+  padding: 10px;
+  text-align: center;
+  border:1px solid;
+}
+
+.card img {
+  width: 100px;
+  min-width: 600px;
+}
+
+.About-Me {
+  border: 2px solid #444;
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.Portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  background-color: #26ebda;
+  border: 20px solid #fff;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.Contact-Information {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 20px;
 }
-#contact_info input {
-  width: 50%;
-  margin: auto;
+
+.Contact-Information ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Contact-Information li {
+  margin: 10px 0;
 }
