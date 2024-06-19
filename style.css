@@ -45,6 +45,11 @@ nav ul li {
   padding: 10px;
 }
 
+#ab{
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .card {
   flex: 1 0 0;
   padding: 10px;
@@ -67,16 +72,24 @@ nav ul li {
 }
 
 .Portfolio {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  display: flex;
+  flex-direction:column;
+
   background-color: #26ebda;
   border: 20px solid #fff;
   padding: 20px;
   font-size: 20px;
   text-align: center;
+  row-gap: 10px;
+}
+
+#pictures{
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: center;
+    row-gap: 10px;
 }
 
 .Contact-Information {
@@ -86,6 +99,10 @@ nav ul li {
   margin-top: 20px;
 }
 
+.Contact-Information header{
+  justify-content: center;
+}
+
 .Contact-Information ul {
   list-style-type: none;
   padding: 0;
@@ -93,4 +110,10 @@ nav ul li {
 
 .Contact-Information li {
   margin: 10px 0;
+}
+#infocontact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
